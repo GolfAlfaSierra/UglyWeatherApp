@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		6EE730B32BAB674E00737D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE730B22BAB674E00737D32 /* AppDelegate.swift */; };
 		6EE730B52BAB674E00737D32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE730B42BAB674E00737D32 /* SceneDelegate.swift */; };
-		6EE730B72BAB674E00737D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE730B62BAB674E00737D32 /* ViewController.swift */; };
-		6EE730BA2BAB674E00737D32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6EE730B92BAB674E00737D32 /* Base */; };
 		6EE730BC2BAB675A00737D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE730BB2BAB675A00737D32 /* Assets.xcassets */; };
 		6EE730BF2BAB675A00737D32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6EE730BE2BAB675A00737D32 /* Base */; };
+		6EE730C72BAB683800737D32 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE730C62BAB683800737D32 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EE730AF2BAB674E00737D32 /* VK Weather App Intern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Weather App Intern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE730B22BAB674E00737D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EE730B42BAB674E00737D32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6EE730B62BAB674E00737D32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6EE730B92BAB674E00737D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EE730BB2BAB675A00737D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EE730BE2BAB675A00737D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EE730C02BAB675A00737D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE730C62BAB683800737D32 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,22 @@
 		6EE730B12BAB674E00737D32 /* VK Weather App Intern */ = {
 			isa = PBXGroup;
 			children = (
+				6EE730C82BAB6B1000737D32 /* Application */,
+				6EE730C62BAB683800737D32 /* MainViewController.swift */,
+			);
+			path = "VK Weather App Intern";
+			sourceTree = "<group>";
+		};
+		6EE730C82BAB6B1000737D32 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				6EE730B22BAB674E00737D32 /* AppDelegate.swift */,
 				6EE730B42BAB674E00737D32 /* SceneDelegate.swift */,
-				6EE730B62BAB674E00737D32 /* ViewController.swift */,
-				6EE730B82BAB674E00737D32 /* Main.storyboard */,
 				6EE730BB2BAB675A00737D32 /* Assets.xcassets */,
 				6EE730BD2BAB675A00737D32 /* LaunchScreen.storyboard */,
 				6EE730C02BAB675A00737D32 /* Info.plist */,
 			);
-			path = "VK Weather App Intern";
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +132,6 @@
 			files = (
 				6EE730BC2BAB675A00737D32 /* Assets.xcassets in Resources */,
 				6EE730BF2BAB675A00737D32 /* Base in Resources */,
-				6EE730BA2BAB674E00737D32 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +142,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE730B72BAB674E00737D32 /* ViewController.swift in Sources */,
 				6EE730B32BAB674E00737D32 /* AppDelegate.swift in Sources */,
 				6EE730B52BAB674E00737D32 /* SceneDelegate.swift in Sources */,
+				6EE730C72BAB683800737D32 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6EE730B82BAB674E00737D32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6EE730B92BAB674E00737D32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6EE730BD2BAB675A00737D32 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +290,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 97TSG2SA93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "VK Weather App Intern/Info.plist";
+				INFOPLIST_FILE = "VK Weather App Intern/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,12 +318,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 97TSG2SA93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "VK Weather App Intern/Info.plist";
+				INFOPLIST_FILE = "VK Weather App Intern/Application/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
