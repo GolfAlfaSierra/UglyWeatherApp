@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E8E169E2BAF1271003E7EED /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E169D2BAF1271003E7EED /* ShadowView.swift */; };
+		6E8E16A02BAF5B22003E7EED /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E169F2BAF5B22003E7EED /* HeaderView.swift */; };
+		6E8E16A22BAF5B8A003E7EED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E16A12BAF5B8A003E7EED /* Extensions.swift */; };
+		6E8E16A42BAF5BDB003E7EED /* WeatherItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E16A32BAF5BDB003E7EED /* WeatherItem.swift */; };
 		6EE730B32BAB674E00737D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE730B22BAB674E00737D32 /* AppDelegate.swift */; };
 		6EE730B52BAB674E00737D32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE730B42BAB674E00737D32 /* SceneDelegate.swift */; };
 		6EE730BC2BAB675A00737D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE730BB2BAB675A00737D32 /* Assets.xcassets */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E8E169D2BAF1271003E7EED /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		6E8E169F2BAF5B22003E7EED /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6E8E16A12BAF5B8A003E7EED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6E8E16A32BAF5BDB003E7EED /* WeatherItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherItem.swift; sourceTree = "<group>"; };
 		6EE730AF2BAB674E00737D32 /* VK Weather App Intern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Weather App Intern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE730B22BAB674E00737D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EE730B42BAB674E00737D32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 			children = (
 				6EE730C82BAB6B1000737D32 /* Application */,
 				6EE730C62BAB683800737D32 /* MainViewController.swift */,
+				6E8E16A32BAF5BDB003E7EED /* WeatherItem.swift */,
+				6E8E16A12BAF5B8A003E7EED /* Extensions.swift */,
+				6E8E169F2BAF5B22003E7EED /* HeaderView.swift */,
+				6E8E169D2BAF1271003E7EED /* ShadowView.swift */,
 			);
 			path = "VK Weather App Intern";
 			sourceTree = "<group>";
@@ -142,6 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E8E16A02BAF5B22003E7EED /* HeaderView.swift in Sources */,
+				6E8E16A22BAF5B8A003E7EED /* Extensions.swift in Sources */,
+				6E8E16A42BAF5BDB003E7EED /* WeatherItem.swift in Sources */,
+				6E8E169E2BAF1271003E7EED /* ShadowView.swift in Sources */,
 				6EE730B32BAB674E00737D32 /* AppDelegate.swift in Sources */,
 				6EE730B52BAB674E00737D32 /* SceneDelegate.swift in Sources */,
 				6EE730C72BAB683800737D32 /* MainViewController.swift in Sources */,
