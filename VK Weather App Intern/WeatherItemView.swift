@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class WeatherItem: UIStackView {
+final class WeatherItemView: UIStackView {
     
     private let titleLabel = UILabel().style(labelStyle: .weatherItemTitleLabelStyle)
     private let valueLabel = UILabel().style(labelStyle: .weatherItemValueLabelStyle)

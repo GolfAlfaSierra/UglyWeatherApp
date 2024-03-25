@@ -6,14 +6,13 @@
 //
 
 import UIKit
+import CoreLocation
 
 extension UILabel {
     func style(labelStyle: LabelStyle) -> UILabel {
         textColor = .white
         
         switch labelStyle {
-        case .dateLabelStyle:
-            font = .systemFont(ofSize: 12, weight: .light)
         case .cityNameLabelStyle:
             font = .systemFont(ofSize: 48, weight: .bold)
         case .temperatureLabelStyle:
@@ -30,6 +29,7 @@ extension UILabel {
             textColor = .secondaryLabel
         case .dayOfweekLabelStyle:
             font = .systemFont(ofSize: 24, weight: .medium)
+            textColor = .label
         }
         
         
@@ -38,14 +38,14 @@ extension UILabel {
 }
 
 enum LabelStyle {
-    case dateLabelStyle,
-         cityNameLabelStyle,
-         temperatureLabelStyle,
-         weatherDescriptionLabelStyle,
-         coordinateLabelStyle,
-         weatherItemTitleLabelStyle,
-         weatherItemValueLabelStyle,
-         dayOfweekLabelStyle
+    case
+    cityNameLabelStyle,
+    temperatureLabelStyle,
+    weatherDescriptionLabelStyle,
+    coordinateLabelStyle,
+    weatherItemTitleLabelStyle,
+    weatherItemValueLabelStyle,
+    dayOfweekLabelStyle
 }
 
 extension UIView {
@@ -61,5 +61,26 @@ extension UIView {
             topAnchor.constraint(equalTo: superview.topAnchor, constant: inset.top),
             bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -inset.bottom)
         ])
+    }
+}
+
+
+extension Double {
+    var asInt: Int {
+        Int(self)
+    }
+}
+
+
+extension String {
+    var asInt: Int? {
+        
+        return Int(self)
+    }
+}
+
+extension CLLocation {
+    func fetchCityAndCountry(completion: @escaping (_ city: String?, _ country:  String?, _ error: Error?) -> ()) {
+        CLGeocoder().reverseGeocodeLocation(self) { completion($0?.first?.locality, $0?.first?.country, $1) }
     }
 }
